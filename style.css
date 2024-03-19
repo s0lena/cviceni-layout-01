@@ -34,3 +34,29 @@ body {
 	- 640px
 	- 1000px
 */
+
+@media (min-width: 640px) {
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .prvni,
+  .druhy {
+    max-width: 50%;
+  }
+  .treti {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .prvni,
+  .druhy,
+  .treti {
+    max-width: calc(100% / 3);
+  }
+}
